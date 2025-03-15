@@ -58,6 +58,7 @@ header > p {
     padding-left: 20px;
     padding-right: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+    margin-bottom: 20px;
 }
 
 nav {
@@ -67,7 +68,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--color1);
     text-decoration: none;
     padding: 10px;
     border-top-left-radius: 5px;
@@ -83,7 +84,7 @@ nav a:hover {
 main {
     background-color: white;
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 200px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -95,6 +96,8 @@ main {
 main h1 {
     color: var(--color5);
     font-family: var(--android-font);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
@@ -104,6 +107,7 @@ main h2 {
     background: linear-gradient(to right, var(--color1), transparent);
     text-indent: 8px;
     border-top-left-radius: 5px;
+    font-weight: normal;
 }
 
 main p {
@@ -185,4 +189,20 @@ footer > p > a {
 footer a:hover {
     text-decoration: underline;
     color: var(--color1);
+}
+
+div.video {
+    background-color: var(--color5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
